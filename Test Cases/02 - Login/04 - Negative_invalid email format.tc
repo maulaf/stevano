@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>04 - Negative_invalid email format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>43d86050-6097-43ef-b678-177398e7a0b7</testCaseGuid>
+</TestCaseEntity>

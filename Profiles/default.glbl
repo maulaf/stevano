@@ -19,4 +19,9 @@
       <initValue>''</initValue>
       <name>password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'.'</initValue>
+      <name>dirProject</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

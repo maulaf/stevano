@@ -6,12 +6,12 @@
    <elementGuidId>c8732734-2c57-45de-8141-b43d8151ddd1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//i[@class = 'text-danger']</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[2]/div/div[1]/div/div/div/div[2]/div/div/div[2]/form/div/div[2]/div/div/small/i</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//i[@class = 'text-danger']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>8b2b5bcb-2475-460a-8d0a-ca56c7fcdc15</webElementGuid>
+      <webElementGuid>2230566f-e081-427d-89fe-b767c79a9387</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,6 +30,6 @@
       <name>class</name>
       <type>Main</type>
       <value>text-danger</value>
-      <webElementGuid>656f3991-bd26-4a3a-bc4f-8c6732a5c407</webElementGuid>
+      <webElementGuid>6c7c7856-056c-46fc-a8e3-0b2578f10a9d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

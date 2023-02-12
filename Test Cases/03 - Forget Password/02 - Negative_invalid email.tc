@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>02 - Negative_invalid email</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6b7b1d0e-959f-4537-8e37-7df5703d7212</testCaseGuid>
+   <testCaseGuid>be5d6a5c-a771-46b1-a4c9-e56b1da5a7b3</testCaseGuid>
 </TestCaseEntity>

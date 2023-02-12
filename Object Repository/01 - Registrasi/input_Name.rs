@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_REGISTER_phone</name>
+   <name>input_Name</name>
    <tag></tag>
-   <elementGuidId>2c3436c7-4d7a-43b6-ad9d-61cc0c24f941</elementGuidId>
+   <elementGuidId>74554e9b-f8fa-463e-afbb-a2615114e615</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#phone</value>
+         <key>XPATH</key>
+         <value>//input[@id='Fullname']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='phone']</value>
+         <key>CSS</key>
+         <value>#Fullname</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,47 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>dee11ee0-7d73-41d7-9a13-13af93f24ab3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>inputmode</name>
-      <type>Main</type>
-      <value>numeric</value>
-      <webElementGuid>5db5fa1e-2430-4df1-b434-570d3221cc4b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>phone</value>
-      <webElementGuid>3c43ac4d-70ef-4014-9b8f-02b042a6876c</webElementGuid>
+      <webElementGuid>6b0dd5c4-7d77-4688-935a-783bf90d83fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>phone</value>
-      <webElementGuid>4764869b-9126-473b-b65b-e36ad5d1b114</webElementGuid>
+      <value>Fullname</value>
+      <webElementGuid>8569bd77-e18f-421a-9769-d86435edce22</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>7104a065-d2d7-4fc6-82bb-0c5304d27022</webElementGuid>
+      <value>Fullname</value>
+      <webElementGuid>c29c0075-9487-4af5-b71e-42114feee491</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>PHONE</value>
-      <webElementGuid>b1eeb948-8f71-47ba-948f-a9751356addc</webElementGuid>
+      <value>FULLNAME</value>
+      <webElementGuid>9328ac75-dcad-43e6-8a9d-75afbe5fde1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,38 +54,46 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>900704a8-b4aa-4dd8-9d8b-0496e6770bbc</webElementGuid>
+      <webElementGuid>7cf0f3c3-7256-48eb-81fa-c6e7fa68c74d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>FormText__Style-rslcf2-0 jZbfmf form-control</value>
+      <webElementGuid>aa39352c-406d-449f-8f0a-1c02810e3b2b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;phone&quot;)</value>
-      <webElementGuid>066f33d4-0da5-478b-9c31-3351c726c783</webElementGuid>
+      <value>id(&quot;Fullname&quot;)</value>
+      <webElementGuid>d227b435-3045-4d4e-86bc-fd20d04cc7f5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='phone']</value>
-      <webElementGuid>a1889434-ffe3-4725-9ec5-f16fe655c8a1</webElementGuid>
+      <value>//input[@id='Fullname']</value>
+      <webElementGuid>bb26150b-1cd6-4b49-9305-5fda25f3ac3a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/input</value>
-      <webElementGuid>6aff740a-de68-4d12-a036-1e49f8f4ee4f</webElementGuid>
+      <value>//div/div/div/div/input</value>
+      <webElementGuid>e57e160c-727c-49ea-a5c4-9ff6880e1ffe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'phone' and @name = 'phone' and @placeholder = 'PHONE' and @type = 'text']</value>
-      <webElementGuid>02d4451a-b042-4227-9e42-6ccea1d1fa96</webElementGuid>
+      <value>//input[@name = 'Fullname' and @id = 'Fullname' and @placeholder = 'FULLNAME' and @type = 'text']</value>
+      <webElementGuid>c64a90fc-1824-426f-ad97-bc1c5364d1f0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

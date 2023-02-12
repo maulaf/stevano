@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_REGISTER_retype-password</name>
+   <name>input_Phone Number</name>
    <tag></tag>
-   <elementGuidId>05c23a3d-3300-4c69-a730-f7f5277cf043</elementGuidId>
+   <elementGuidId>2c3436c7-4d7a-43b6-ad9d-61cc0c24f941</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#retype-password</value>
+         <key>XPATH</key>
+         <value>//input[@id='phone']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='retype-password']</value>
+         <key>CSS</key>
+         <value>#phone</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,78 +22,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>9ce0d1e2-572f-438d-8961-bbe236d9ad84</webElementGuid>
+      <webElementGuid>dee11ee0-7d73-41d7-9a13-13af93f24ab3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>inputmode</name>
       <type>Main</type>
-      <value>retype-password</value>
-      <webElementGuid>01a3a572-2cad-4be8-afe9-688e6f5f5416</webElementGuid>
+      <value>numeric</value>
+      <webElementGuid>5db5fa1e-2430-4df1-b434-570d3221cc4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>retype-password</value>
-      <webElementGuid>29990a20-f0f3-4686-9fef-f64fe9337d49</webElementGuid>
+      <value>phone</value>
+      <webElementGuid>3c43ac4d-70ef-4014-9b8f-02b042a6876c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>name</name>
       <type>Main</type>
-      <value>PASSWORD</value>
-      <webElementGuid>427929e9-8342-4cb8-b955-357b38035a7b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>password</value>
-      <webElementGuid>621efb08-b35d-4150-b991-d3f32516a24f</webElementGuid>
+      <value>phone</value>
+      <webElementGuid>4764869b-9126-473b-b65b-e36ad5d1b114</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>FormRePassword__Style-sc-1s7xcl0-0 ivumoT form-control</value>
-      <webElementGuid>2624f8f0-a81f-474d-a981-976fb814b4ac</webElementGuid>
+      <value>form-control</value>
+      <webElementGuid>7104a065-d2d7-4fc6-82bb-0c5304d27022</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>PHONE</value>
+      <webElementGuid>b1eeb948-8f71-47ba-948f-a9751356addc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>900704a8-b4aa-4dd8-9d8b-0496e6770bbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;retype-password&quot;)</value>
-      <webElementGuid>bb19bc9f-1c41-4ff0-93b2-bba36e6f640a</webElementGuid>
+      <value>id(&quot;phone&quot;)</value>
+      <webElementGuid>066f33d4-0da5-478b-9c31-3351c726c783</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='retype-password']</value>
-      <webElementGuid>78c6ca6f-1a85-4c5e-9572-c4224742a0f2</webElementGuid>
+      <value>//input[@id='phone']</value>
+      <webElementGuid>a1889434-ffe3-4725-9ec5-f16fe655c8a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div/div/div/input</value>
-      <webElementGuid>96760a13-a660-4052-91fa-885ebefacd49</webElementGuid>
+      <value>//div[2]/div/div/input</value>
+      <webElementGuid>6aff740a-de68-4d12-a036-1e49f8f4ee4f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@name = 'retype-password' and @id = 'retype-password' and @placeholder = 'PASSWORD' and @type = 'password']</value>
-      <webElementGuid>4e955cb7-0c80-4182-8830-450f9b4e948e</webElementGuid>
+      <value>//input[@id = 'phone' and @name = 'phone' and @placeholder = 'PHONE' and @type = 'text']</value>
+      <webElementGuid>02d4451a-b042-4227-9e42-6ccea1d1fa96</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

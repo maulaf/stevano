@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03 - Negative_email not registered</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec335f76-f8e0-4bce-b31e-d552edcd9d97</testCaseGuid>
+</TestCaseEntity>

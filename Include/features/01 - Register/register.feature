@@ -13,7 +13,7 @@ Feature: Register
   Scenario: Register with missing required fields
     Given user is on the registration page
     And click register button
-    Then system should display an error message indicating which fields are missing
+    Then system should display an error message register
 
   @Negative-invalidEmailFormat
   Scenario: Register with invalid email format
@@ -36,11 +36,4 @@ Feature: Register
   @Negative
   Scenario: negative scenario
     Given user is on the registration page
-    And click register button
-    Then system should display an error message indicating which fields are missing
-    When user enters an invalid email format
-    Then system should display an error message indicating that the email format is invalid
-    When user enter invalid password
-    Then system should display an error message indicating why the password is not valid
-    When user enter invalid characters
-    Then system should display an error message indicating which characters are not allowed
+    And user input detail registrasi

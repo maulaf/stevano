@@ -17,32 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
-def firstNames = ['John', 'Jane', 'James', 'Jennifer', 'Jessica']
-def lastNames = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown']
-def domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com']
-def phoneNumberLength = 12
-def number = '0123456789'
-def passwordLength = 10
-def chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*'
-def random = new java.security.SecureRandom()
-
-def randomFirstName = firstNames[(int)(Math.random() * firstNames.size())].toLowerCase()
-def randomLastName = lastNames[(int)(Math.random() * lastNames.size())].toLowerCase()
-def randomDomain = domains[(int)(Math.random() * domains.size())].toLowerCase()
-
-def fullName = "${randomFirstName} ${randomLastName}"
-def email = "${randomFirstName}.${randomLastName}@${randomDomain}"
-def phoneNumber = (1..phoneNumberLength).collect { number[random.nextInt(number.length())] }.join()
-def password = (1..passwordLength).collect { chars[random.nextInt(chars.length())] }.join()
-
-
-println fullName
-println email
-println phoneNumber
-println password
-
-
-
-
-
+CucumberKW.runFeatureFileWithTags('Include/features/02 - Login/login.feature', ' @Negative-failedLogin')

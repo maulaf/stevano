@@ -17,4 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFileWithTags('Include/features/01 - Register/register.feature', '@Negative-missingRequiredField')
+CucumberKW.runFeatureFileWithTags('Include/features/02 - Login/login.feature', '@Negative-missingRequiredField')

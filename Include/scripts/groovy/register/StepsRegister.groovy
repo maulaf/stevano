@@ -18,6 +18,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.keyword.excel.ExcelKeywords
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable
 
@@ -48,6 +49,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import groovy.util.slurpersupport.GPathResult
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 
 class StepsRegister {
@@ -67,28 +70,10 @@ class StepsRegister {
 	@And("user enters required information")
 	def inputRegistrationForm(){
 
-		def firstNames = [
-			'John',
-			'Jane',
-			'James',
-			'Jennifer',
-			'Jessica'
-		]
-		def lastNames = [
-			'Smith',
-			'Johnson',
-			'Williams',
-			'Jones',
-			'Brown'
-		]
-		def domains = [
-			'gmail.com',
-			'yahoo.com',
-			'hotmail.com',
-			'outlook.com',
-			'aol.com'
-		]
-		
+		def firstNames = ['Fetty', 'Fenny', 'Alwi', 'Kafi', 'Ummu']
+		def lastNames = ['Maula', 'Nimatul', 'Rahayu', 'Zakiyyah', 'Lestari']
+		def domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com']
+
 		def phoneNumberLength = 12
 		def number = '0123456789'
 		def passwordLength = 10
@@ -104,10 +89,10 @@ class StepsRegister {
 		def phoneNumber = (1..phoneNumberLength).collect { number[random.nextInt(number.length())] }.join()
 		def password = (1..passwordLength).collect { chars[random.nextInt(chars.length())] }.join()
 
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_Fullname'), fullName)
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_phone'), phoneNumber)
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_email'), email)
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_retype-password'), password)
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Name'), fullName)
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Phone Number'), phoneNumber)
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Email'), email)
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Password'), password)
 		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_re-retype-password'), password)
 		WebUI.takeFullPageScreenshot()
 
@@ -131,85 +116,99 @@ class StepsRegister {
 	def saveRegisInfo(){
 		String excelRegis = RunConfiguration.getProjectDir() + '/Excel/01 - Registrasi.xlsx/'
 		String sheet = 'suksesRegis'
-		
+
 		def workbook01 = ExcelKeywords.getWorkbook(excelRegis)
 		def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheet)
-		
+
 		ExcelKeywords.setValueToCellByIndex(sheet01, 1, 0, GlobalVariable.email)
 		ExcelKeywords.setValueToCellByIndex(sheet01, 1, 1, GlobalVariable.password)
-		
-		ExcelKeywords.saveWorkbook(excelRegis, workbook01)		
-		
+
+		ExcelKeywords.saveWorkbook(excelRegis, workbook01)
 	}
-	
-	@Then("system should display an error message indicating which fields are missing")
+
+	@Then("system should display an error message register")
 	def errorMissingFieldsRegis() {
-		
-		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldFullName'), 10)
-		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldEmail')).contains("Name cannot be empty")
-		
+
+		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldName'), 10)
+		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldName')).contains("Name cannot be empty")
+
 		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldPhone'), 10)
 		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldPhone')).contains("Phone Number cannot be empty")
-		
+
 		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldEmail'), 10)
 		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldEmail')).contains("Email cannot be empty")
-		
+
 		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldPassword'), 10)
 		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldPassword')).contains("Password cannot be empty")
-		
-		WebUI.takeFullPageScreenshot()
-		
+
+		WebUI.takeScreenshot()
 	}
-	
+
 	@When("user enters an invalid email format")
 	def invalidEmail(){
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_email'), 'test@test')
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Email'), 'test@test')
 	}
-	
+
 	@Then("system should display an error message indicating that the email format is invalid")
 	def verifyInvalidEmail(){
-		assert WebUI.verifyElementPresent(findTestObject('Object Repository/01 - Registrasi/err_FieldEmail'), 10)		
-		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/err_FieldEmail')).contains("Format email (Cth: asd@xxx.com)")
-		WebUI.takeFullPageScreenshot()		
+		assert WebUI.verifyTextPresent('Format email (Cth: asd@xxx.com)', false)
+		WebUI.takeScreenshot()
 	}
-	
+
 	@When("user enter invalid password")
 	def invalidPassword() {
 		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_retype-password'), '123')
-		
 	}
-	
+
 	@Then("system should display an error message indicating why the password is not valid")
 	def verifyInvalidPassword() {
-		WebUI.verifyTextPresent('Please use at least 8 characters', false, FailureHandling.STOP_ON_FAILURE)
-		WebUI.takeFullPageScreenshot()
+		assert WebUI.verifyTextPresent('Please use at least 8 characters', false)
+		WebUI.takeScreenshot()
 	}
-	
-	
+
+
 	@When("user enter invalid characters")
 	def invalidChar() {
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_Fullname'), '&')		
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_phone'), '&')
-		
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Name'), '&')
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Phone Number'), '&')
 	}
-	
-	
+
+
 	@Then("system should display an error message indicating which characters are not allowed")
 	def verifyInvalidChar() {
-//		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_Fullname')).equals("")
-//		assert WebUI.getText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_phone')).equals("")
-//		WebUI.verifyElementText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_Fullname'), '')
-//		WebUI.verifyElementText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_phone'), '')
-		
-		def valueFullName = WebUI.getAttribute(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_Fullname'), 'text')
-		def valuePhone = WebUI.getAttribute(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_phone'), 'text')
-		
+
+		def valueFullName = WebUI.getAttribute(findTestObject('Object Repository/01 - Registrasi/input_Name'), 'text')
+		def valuePhone = WebUI.getAttribute(findTestObject('Object Repository/01 - Registrasi/input_Phone Number'), 'text')
+
 		println valueFullName
 		println valuePhone
-		
+
 		assert valueFullName.equals("")
 		assert valuePhone.equals("")
-		
+
 		WebUI.takeFullPageScreenshot()
+	}
+
+	@And("user input detail registrasi")
+	def inputDetailRegis() {
+		TestData data = findTestData('Data Files/01 - Registrasi/registrasi-negative')
+
+		for(int i=1; i <= data.getRowNumbers(); i++) {
+
+			String[][] detailRegis = [['Name', 'name', 'validasi_name'], ['Phone Number', 'phone', 'validasi_phone'], ['Email', 'email', 'validasi_email'], ['Password', 'password', 'validasi_password']]
+
+			for (int input = 0; input < detailRegis.length; input++) {
+				WebUI.sendKeys(findTestObject('Object Repository/01 - Registrasi/input_'+detailRegis[input][0]), Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE))
+				WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_'+detailRegis[input][0]), data.getValue(detailRegis[input][1], i))
+
+				if (i == data.getRowNumbers()) {
+					WebElement buttonRegister = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/01 - Registrasi/button_REGISTER'),20)
+					WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonRegister))
+				}
+
+				assert WebUI.verifyTextPresent(data.getValue(detailRegis[input][2], i), false)
+				WebUI.takeScreenshot()
+			}
+		}
 	}
 }

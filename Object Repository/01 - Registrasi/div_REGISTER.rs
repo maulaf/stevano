@@ -22,7 +22,7 @@
       <name>text</name>
       <type>Main</type>
       <value>REGISTER</value>
-      <webElementGuid>7b0d6c80-f1e3-4790-ad56-f23b6daf7256</webElementGuid>
+      <webElementGuid>fafea895-5189-439a-87c2-9805539b8a31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,6 +30,6 @@
       <name>class</name>
       <type>Main</type>
       <value>login-regis-btn disabled</value>
-      <webElementGuid>5d97ec54-e1e1-4904-b239-24d31c0cdb50</webElementGuid>
+      <webElementGuid>587b5692-ee6e-4963-a66c-6d97f7bcc740</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

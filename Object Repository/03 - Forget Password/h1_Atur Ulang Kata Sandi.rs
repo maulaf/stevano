@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h1_Atur Ulang Kata Sandi</name>
+   <tag></tag>
+   <elementGuidId>6e24a654-985d-450f-8809-e2e24f10c235</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__next']/div/div/div/div/div[2]/div/form/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.title-verif</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>a67e9bd8-dd69-4c8d-bb04-a0397ec90331</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>title-verif</value>
+      <webElementGuid>de888f8a-8d8e-4a2d-803f-7990aefb4ea6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Atur Ulang Kata Sandi</value>
+      <webElementGuid>e5bd61bf-732c-4560-9375-49dbe11ab7e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[@class=&quot;reset-password__StyleDiv-hgoonl-0 ZGcDH&quot;]/div[@class=&quot;d-flex justify-content-center align-items-center container&quot;]/div[@class=&quot;justify-content-center w-100 row&quot;]/div[@class=&quot;p-0 col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6&quot;]/div[@class=&quot;card&quot;]/div[@class=&quot;card-body&quot;]/form[1]/h1[@class=&quot;title-verif&quot;]</value>
+      <webElementGuid>041b9f04-3604-4ec3-9c5c-ff53291e4ba9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div/div/div/div/div[2]/div/form/h1</value>
+      <webElementGuid>534b4ff3-8098-4b7d-9f51-5bc5de01cf0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::h1[1]</value>
+      <webElementGuid>65752fcb-cbad-409b-b1a3-b0a2318410e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::h1[1]</value>
+      <webElementGuid>42d526ce-f293-4642-9684-41205ea5c4ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Atur Ulang Kata Sandi']/parent::*</value>
+      <webElementGuid>38b16807-a139-442b-a3bc-cfc82a472eaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>8a0c326b-c4fb-460f-a203-1d2c92e5e1e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'Atur Ulang Kata Sandi' or . = 'Atur Ulang Kata Sandi')]</value>
+      <webElementGuid>3b08c6bd-c474-4cef-951e-e7919c7fd520</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
