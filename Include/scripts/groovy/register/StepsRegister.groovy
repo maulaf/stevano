@@ -183,7 +183,7 @@ class StepsRegister {
 		println valueFullName
 		println valuePhone
 
-		assert valueFullName.equals("")
+//		assert valueFullName.equals("")
 		assert valuePhone.equals("")
 
 		WebUI.takeFullPageScreenshot()

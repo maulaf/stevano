@@ -45,64 +45,63 @@ import cucumber.api.java.en.When
 
 
 class StepsForgetPassword {
-	
+
 	@When('user clicks on the "Forgot Password" link')
 	def clickForgetPassword() {
 		WebUI.click(findTestObject('Object Repository/03 - Forget Password/a_forgot password'))
 		WebUI.waitForElementPresent(findTestObject('Object Repository/03 - Forget Password/h1_Atur Ulang Kata Sandi'), 0)
 		WebUI.takeScreenshot()
-		
 	}
-	
-	
+
+
 	@And('user enters their registered email address')
-	def inputRegisterEmail() {		
+	def inputRegisterEmail() {
 		def email = 'fetty.maula98@gmail.com'
 		WebUI.setText(findTestObject('Object Repository/03 - Forget Password/input_Atur Ulang Kata Sandi_email'), email)
 		WebUI.takeScreenshot()
-		
 	}
-	
+
 	@And('user enters an invalid email address')
 	def enterInvalidEmail(){
 		def invalidEmail = 'test@test'
 		WebUI.setText(findTestObject('Object Repository/03 - Forget Password/input_Atur Ulang Kata Sandi_email'), invalidEmail)
 		WebUI.takeScreenshot()
 	}
-	
-	
+
+
 	@And('user enters an email address that is not registered')
 	def inputNotRegisteredEmail() {
 		def email = 'test@yahoo.com'
 		WebUI.setText(findTestObject('Object Repository/03 - Forget Password/input_Atur Ulang Kata Sandi_email'), email)
 		WebUI.takeScreenshot()
 	}
-	
-	
+
+
 	@And('user clicks on the submit button')
 	def clickSubmit() {
-		WebUI.click(findTestObject('Object Repository/03 - Forget Password/a_forgot password'))
+		WebUI.click(findTestObject('Object Repository/03 - Forget Password/button_Submit'))
 	}
-	
+
 	@Then('user should receive an email with instructions to reset their password')
-	def successSendEmail() {	
+	def successSendEmail() {
 		//system should be display a pop up message that email is sent
-		WebUI.takeScreenshot()		
+		//assert WebUI.verifyTextPresent('email is sent', false)
+		WebUI.takeScreenshot()
 	}
-	
-	
+
+
 	@Then('user should receive an error message indicating that the email is invalid')
 	def verifyInvalidEmail() {
 		//system should be display an error message due invalid email
+		//assert WebUI.verifyTextPresent('email is invalid', false)
 		WebUI.takeScreenshot()
-		
+
 	}
-	
+
 	@Then('user should receive an error message indicating that the email address is not registered')
 	def verifyEmailNotRegistered() {
 		//shoud be display an error message due email is not registered
+		//assert WebUI.verifyTextPresent('email is not registered', false)
 		WebUI.takeScreenshot()
 	}
-	
- 
 }

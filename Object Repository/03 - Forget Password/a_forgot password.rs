@@ -6,12 +6,16 @@
    <elementGuidId>e30de92d-3026-492f-9641-0b29a671f78c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'forgot password?')]</value>
+         <key>BASIC</key>
+         <value>//*[@href = '/reset-password' and (text() = ' forgot password? ' or . = ' forgot password? ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>p.text-center.forgot > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@href = '/reset-password' and (text() = ' forgot password? ' or . = ' forgot password? ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>5b1f8c29-1273-4f27-a352-f7f360830ab5</webElementGuid>
+      <webElementGuid>aefb06f4-3038-4df2-8fa0-de083bfe885f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/reset-password</value>
-      <webElementGuid>47f92654-70f0-439e-a4a7-b780213e9ef3</webElementGuid>
+      <webElementGuid>54061b60-8634-47f0-a87e-7b37d2855462</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value> forgot password? </value>
-      <webElementGuid>38c3b5f6-ea49-4ded-8b55-b8d1e5e62b0b</webElementGuid>
+      <webElementGuid>22d441c5-3784-4fde-b4da-649d26e517e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;modal-open&quot;]/div[3]/div[1]/div[@class=&quot;modal fade show&quot;]/div[@class=&quot;modal-dialog Login__Style-sc-17sdzts-0 hzvKhA modal-xl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;d-flex p-0 modal-body&quot;]/div[@class=&quot;p-0 col-sm-12 col-md-12 col-lg-5 col-xl-5&quot;]/div[@class=&quot;card&quot;]/div[@class=&quot;card-body&quot;]/div[@class=&quot;form-container row&quot;]/form[@class=&quot;main-form&quot;]/p[@class=&quot;text-center forgot&quot;]/a[1]</value>
-      <webElementGuid>cf5f814e-a493-428f-8a0b-50a72e245d8b</webElementGuid>
+      <webElementGuid>e88f1acd-8030-4dc2-a5c8-c15ef75afefa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'forgot password?')]</value>
-      <webElementGuid>cc63e665-b8fd-47d3-bd69-a053dbb385d5</webElementGuid>
+      <webElementGuid>219849b8-b005-4c87-b454-374ea3e23871</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='SIGN IN'])[1]/following::a[1]</value>
-      <webElementGuid>64b3b807-4f8e-466b-9cf0-9bc9d97fedce</webElementGuid>
+      <webElementGuid>94302389-d3d7-4fe3-994a-07f1f7408c32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='REGISTER'])[1]/following::a[1]</value>
-      <webElementGuid>c0df2125-2a2e-4da4-b917-b0ac0209b3fc</webElementGuid>
+      <webElementGuid>ffa281df-95c6-445f-96ef-f38ca7642c8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='forgot password?']/parent::*</value>
-      <webElementGuid>40c718d2-2700-4527-86d8-3379db86e503</webElementGuid>
+      <webElementGuid>0ecd48f1-8831-44c4-a55b-245ecc2a6845</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/reset-password')]</value>
-      <webElementGuid>90ef5b84-fbc4-4cf4-89ab-b13911db1d3e</webElementGuid>
+      <webElementGuid>b644c68b-b182-4d03-acf4-4e4c4e497097</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p/a</value>
-      <webElementGuid>d65b555a-c243-4224-9698-a2d960df3e5c</webElementGuid>
+      <webElementGuid>8f5f6c59-c28a-4886-93a3-75bb23754f32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/reset-password' and (text() = ' forgot password? ' or . = ' forgot password? ')]</value>
-      <webElementGuid>be08283e-6922-4467-a8b9-eed61e8cabd5</webElementGuid>
+      <webElementGuid>af79ca13-b1ed-4c81-ad55-7444f1c95ae0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
