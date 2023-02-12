@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "8ED8C7E3BE5F30E00FDEC32F38946FB6",
+  "keywordFileContentHash": "3D8B46141AE22DE944619E654A631C60",
   "keywordClasses": [
     {
       "name": "register.StepsRegister",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

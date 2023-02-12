@@ -157,7 +157,7 @@ class StepsRegister {
 
 	@When("user enter invalid password")
 	def invalidPassword() {
-		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_REGISTER_retype-password'), '123')
+		WebUI.setText(findTestObject('Object Repository/01 - Registrasi/input_Password'), '123')
 	}
 
 	@Then("system should display an error message indicating why the password is not valid")
@@ -183,8 +183,8 @@ class StepsRegister {
 		println valueFullName
 		println valuePhone
 
-//		assert valueFullName.equals("")
-		assert valuePhone.equals("")
+		//		assert valueFullName.equals(null)
+		assert valuePhone.equals(null)
 
 		WebUI.takeFullPageScreenshot()
 	}
